@@ -31,7 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     RoleHierarchy roleHierarchy(){
         RoleHierarchyImpl roleHierarchy=new RoleHierarchyImpl();
         String hierarchy="ROLE_dba>ROLE_admin\n ROLE_admin>ROLE_user";
-
+        roleHierarchy.setHierarchy(hierarchy);
         return roleHierarchy;
 
     }
