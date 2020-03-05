@@ -10,5 +10,5 @@ import java.util.List;
 public interface UserMapper {
     User loadUserByUsername(String username);
 
-    List<Role> getUserRolesById();
+    List<Role> getUserRolesById(Integer id);
 }
