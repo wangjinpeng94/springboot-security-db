@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     RoleHierarchy roleHierarchy(){
         RoleHierarchyImpl roleHierarchy=new RoleHierarchyImpl();
-        String hierarchy="ROLE_dba>ROLE_admin\n ROLE_admin>ROLE_user";
+        String hierarchy="ROLE_dba > ROLE_admin \n ROLE_admin > ROLE_user";//没空格不行
         roleHierarchy.setHierarchy(hierarchy);
         return roleHierarchy;
 
